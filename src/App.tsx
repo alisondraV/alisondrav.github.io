@@ -10,12 +10,12 @@ import React from 'react';
 function App() {
     return (
     <BrowserRouter>
-        <div className="w-full flex justify-between">
-            <Link to="/" className="">Main</Link>
-            <Link to="/about-me" className="">Who am I?</Link>
-            <Link to="/projects" className="">Projects</Link>
-            <Link to="/articles" className="">Articles</Link>
-            <Link to="/contact-me" className="">Contact Me</Link>
+        <div className="w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-24 text-2xl text-background">
+            <Link to="/" className="font-header">Main</Link>
+            <Link to="/about-me" className="font-header">Who am I?</Link>
+            <Link to="/projects" className="font-header">Projects</Link>
+            <Link to="/articles" className="font-header">Articles</Link>
+            <Link to="/contact-me" className="font-header">Contact Me</Link>
         </div>
 
         <Route path="/" component={Main} />

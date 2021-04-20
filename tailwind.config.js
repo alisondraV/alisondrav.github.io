@@ -10,7 +10,12 @@ module.exports = {
       'emerald': '#3C9099',
       'dark-blue': '#1C3A53'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'header': ['Quicksand', 'serif'],
+        'regular': ['Josefin Sans', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},
