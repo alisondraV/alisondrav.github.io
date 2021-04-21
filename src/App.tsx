@@ -1,16 +1,18 @@
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import AboutMe from './Pages/AboutMe';
-import Articles from './Pages/Articles';
-import ContactMe from './Pages/ContactMe';
-import Main from './Pages/Main';
-import Projects from './Pages/Projects';
+import AboutMe from './pages/AboutMe';
+import Articles from './pages/Articles';
+import ContactMe from './pages/ContactMe';
+import Main from './pages/Main';
+import MenuClose from '@assets/MenuClose.svg';
+import Projects from './pages/Projects';
 import React from 'react';
 
 function App() {
     return (
     <BrowserRouter>
         <div className="w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-24 text-2xl text-background">
+            <img src={MenuClose} alt="Close"/>
             <Link to="/" className="font-header">Main</Link>
             <Link to="/about-me" className="font-header">Who am I?</Link>
             <Link to="/projects" className="font-header">Projects</Link>
