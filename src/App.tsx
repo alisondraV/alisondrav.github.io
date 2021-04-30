@@ -14,8 +14,8 @@ function App() {
 
     return (
     <BrowserRouter>
-        <img src={MenuDrD} alt="Close" className="top-0 fixed pl-24 pt-10" onClick={() => setVisibility('')} />
-        <div className={`${visibility} w-full flex justify-between top-0 fixed bg-dark-blue py-10 px-24 text-2xl text-background`}>
+        <img src={MenuDrD} alt="Close" className="top-0 fixed pl-10 md:pl-24 pt-10" onClick={() => setVisibility('')} />
+        <div className={`${visibility} w-full flex justify-between top-0 fixed bg-dark-blue py-10 px-5 md:px-24 md:text-2xl text-background`}>
             <img src={MenuClose} alt="Close" onClick={() => setVisibility('hidden')} />
             <Link to="/" className="font-header">Main</Link>
             <Link to="/about-me" className="font-header">Who am I?</Link>
