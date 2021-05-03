@@ -24,11 +24,11 @@ function App() {
             <Link to="/contact-me" className="font-header">Contact Me</Link>
         </div>
 
-        <Route path="/" component={Main} />
-        <Route path="/about-me" component={AboutMe} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/articles" component={Articles} />
-        <Route path="/contact-me" component={ContactMe} />
+        <Route exact path="/" component={Main} />
+        <Route exact path="/about-me" component={AboutMe} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/articles" component={Articles} />
+        <Route exact path="/contact-me" component={ContactMe} />
     </BrowserRouter>
   );
 }
