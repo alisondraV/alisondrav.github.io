@@ -23,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/*.ts src/**/*.tsx",
+    "format": "eslint src/*.ts src/**/*.ts src/**/*.tsx --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +48,11 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
     "autoprefixer": "^9.8.6",
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
   }

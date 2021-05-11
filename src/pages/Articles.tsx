@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-function Articles() {
-    return (
-        <div>
-            <h1>Articles</h1>
-        </div>
-    )
+export default function Articles(): ReactElement {
+  return (
+    <div>
+      <h1>Articles</h1>
+    </div>
+  );
 }
-
-export default Articles;

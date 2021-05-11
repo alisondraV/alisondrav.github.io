@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-function Projects() {
-    return (
-        <div>
-            <h1>Projects</h1>
-        </div>
-    )
+export default function Projects():ReactElement {
+  return (
+    <div>
+      <h1>Projects</h1>
+    </div>
+  );
 }
-
-export default Projects;
