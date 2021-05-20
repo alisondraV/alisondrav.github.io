@@ -19,7 +19,10 @@ export default function App(): ReactElement {
           className="top-0 fixed pl-8 md:pl-24 pt-7"
           onClick={() => setVisibility('')}
       />
-      <div className={`${visibility} w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background`}>
+      <div
+          className={`${visibility} 
+            w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background`}
+      >
         <img src={MenuClose} alt="Close" onClick={() => setVisibility('hidden')} />
         <Link to="/" className="font-header text-xl">Main</Link>
         <Link to="/about-me" className="font-header text-xl">Who am I?</Link>
