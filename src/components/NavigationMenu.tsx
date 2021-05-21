@@ -7,6 +7,12 @@ import Main from '@/pages/Main'
 import MenuClose from '@assets/MenuClose.svg'
 import MenuDrD from '@assets/MenuDrD.svg'
 import Projects from '@/pages/Projects'
+import { motion } from 'framer-motion'
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: '-100%' },
+}
 
 export default function NavigationMenu(): ReactElement {
   const [visibility, setVisibility] = useState('hidden')
@@ -18,17 +24,28 @@ export default function NavigationMenu(): ReactElement {
         className="top-0 fixed pl-8 md:pl-24 pt-7"
         onClick={() => setVisibility('')}
       />
-      <div
-        className={`${visibility} 
-            w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background`}
+      <motion.div
+        animate={visibility === 'hidden' ? 'closed' : 'open'}
+        variants={variants}
+        className='w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background'
       >
         <img src={MenuClose} alt="Close" onClick={() => setVisibility('hidden')} />
-        <Link to="/" className="font-header text-xl">Main</Link>
-        <Link to="/about-me" className="font-header text-xl">Who am I?</Link>
-        <Link to="/projects" className="font-header text-xl">Projects</Link>
-        <Link to="/articles" className="font-header text-xl">Articles</Link>
-        <Link to="/contact-me" className="font-header text-xl">Contact Me</Link>
-      </div>
+        <Link to="/" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
+            Main
+        </Link>
+        <Link to="/about-me" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
+            Who am I?
+        </Link>
+        <Link to="/projects" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
+            Projects
+        </Link>
+        <Link to="/articles" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
+            Articles
+        </Link>
+        <Link to="/contact-me" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
+            Contact Me
+        </Link>
+      </motion.div>
 
       <Route exact path="/" component={Main} />
       <Route exact path="/about-me" component={AboutMe} />
