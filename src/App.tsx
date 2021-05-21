@@ -1,26 +1,27 @@
-import './App.css';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import React, { ReactElement, useState } from 'react';
-import AboutMe from './pages/AboutMe';
-import Articles from './pages/Articles';
-import ContactMe from './pages/ContactMe';
-import Main from './pages/Main';
-import MenuClose from '@assets/MenuClose.svg';
-import MenuDrD from '@assets/MenuDrD.svg';
-import Projects from './pages/Projects';
+import './App.css'
+import { BrowserRouter, Link, Route } from 'react-router-dom'
+import React, { ReactElement, useState } from 'react'
+import AboutMe from './pages/AboutMe'
+import Articles from './pages/Articles'
+import ContactMe from './pages/ContactMe'
+import Main from './pages/Main'
+import MenuClose from '@assets/MenuClose.svg'
+import MenuDrD from '@assets/MenuDrD.svg'
+import NavigationMenu from '@/components/NavigationMenu'
+import Projects from './pages/Projects'
 
 export default function App(): ReactElement {
-  const [visibility, setVisibility] = useState('hidden');
+  const [visibility, setVisibility] = useState('hidden')
 
   return (
     <BrowserRouter>
       <img
-          src={MenuDrD} alt="Close"
-          className="top-0 fixed pl-8 md:pl-24 pt-7"
-          onClick={() => setVisibility('')}
+        src={MenuDrD} alt="Close"
+        className="top-0 fixed pl-8 md:pl-24 pt-7"
+        onClick={() => setVisibility('')}
       />
       <div
-          className={`${visibility} 
+        className={`${visibility} 
             w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background`}
       >
         <img src={MenuClose} alt="Close" onClick={() => setVisibility('hidden')} />
@@ -37,5 +38,5 @@ export default function App(): ReactElement {
       <Route exact path="/articles" component={Articles} />
       <Route exact path="/contact-me" component={ContactMe} />
     </BrowserRouter>
-  );
+  )
 }

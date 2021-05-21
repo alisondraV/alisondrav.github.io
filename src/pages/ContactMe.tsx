@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
 export default function ContactMe(): ReactElement {
   return (
@@ -22,5 +22,5 @@ export default function ContactMe(): ReactElement {
         />
       </form>
     </div>
-  );
+  )
 }

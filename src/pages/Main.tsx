@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
-import Alisa from '@assets/Alisa.svg';
-import HiddenImage from '@/components/HiddenImage';
-import Surprise from '@/components/Surprise';
-import Ukraine from '@assets/Ukraine.svg';
+import React, { ReactElement } from 'react'
+import Alisa from '@assets/Alisa.svg'
+import HiddenImage from '@/components/HiddenImage'
+import Surprise from '@/components/Surprise'
+import Ukraine from '@assets/Ukraine.svg'
 
 export default function Main(): ReactElement {
   return (
@@ -14,5 +14,5 @@ export default function Main(): ReactElement {
       </h1>
       <Surprise />
     </div>
-  );
+  )
 }
