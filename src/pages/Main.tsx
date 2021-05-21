@@ -12,6 +12,7 @@ export default function Main(): ReactElement {
         I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' /> I
         have a lot of energy and positivity that I am willing to share with people.
       </h1>
+      <Surprise />
     </div>
   );
 }
