@@ -25,7 +25,6 @@
         "linebreak-style": ["error", "unix"],
         "quotes": ["error", "single"],
         "semi": ["error", "never"],
-        "sort-imports": "warn",
         "object-curly-spacing": ["warn", "always"],
         "max-len": ["warn", { "code": 110 }]
     }

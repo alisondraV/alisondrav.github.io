@@ -6,7 +6,7 @@ interface MotionImageProps {
     classes: string
 }
 
-export default function MotionImage({ src, classes }: MotionImageProps): ReactElement {
+export function MotionImage({ src, classes }: MotionImageProps): ReactElement {
   return (
     <motion.img
       alt="MotionImage"

@@ -1,8 +1,9 @@
-import { BrowserRouter, Link, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import React, { ReactElement, useState } from 'react'
 import AboutMe from '@/pages/AboutMe'
 import Articles from '@/pages/Articles'
 import ContactMe from '@/pages/ContactMe'
+import { CustomLink } from '@/components'
 import Main from '@/pages/Main'
 import MenuClose from '@assets/MenuClose.svg'
 import MenuDrD from '@assets/MenuDrD.svg'
@@ -27,24 +28,14 @@ export default function NavigationMenu(): ReactElement {
       <motion.div
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
-        className='w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 text-background'
+        className='w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24'
       >
-        <img src={MenuClose} alt="Close" onClick={() => setVisibility('hidden')} />
-        <Link to="/" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
-            Main
-        </Link>
-        <Link to="/about-me" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
-            Who am I?
-        </Link>
-        <Link to="/projects" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
-            Projects
-        </Link>
-        <Link to="/articles" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
-            Articles
-        </Link>
-        <Link to="/contact-me" className="font-header text-xl" onClick={() => setVisibility('hidden')}>
-            Contact Me
-        </Link>
+        <img src={MenuClose} className="cursor-pointer" alt="Close" onClick={() => setVisibility('hidden')} />
+        <CustomLink action={() => setVisibility('hidden')} label='Main' route='/' />
+        <CustomLink action={() => setVisibility('hidden')} label='Who am I?' route='/about-me' />
+        <CustomLink action={() => setVisibility('hidden')} label='Projects' route='/projects' />
+        <CustomLink action={() => setVisibility('hidden')} label='Articles' route='/articles' />
+        <CustomLink action={() => setVisibility('hidden')} label='Contact Me' route='/contact-me' />
       </motion.div>
 
       <Route exact path="/" component={Main} />

@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from 'react'
 import SurpriseImage from '@assets/Surprise.jpeg'
 import { motion } from 'framer-motion'
 
-export default function Surprise(): ReactElement {
+export function Surprise(): ReactElement {
   const [surpriseVisibility, setSurpriseVisibility] = useState('hidden')
 
   return (
