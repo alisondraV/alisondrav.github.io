@@ -12,8 +12,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'header': ['Quicksand', 'serif'],
-        'regular': ['Josefin Sans', 'sans-serif']
+        'header': ['LuthonSouthardSerif', 'sans-serif'],
+        'regular': ['KenokyLight', 'sans-serif']
       }
     },
   },
