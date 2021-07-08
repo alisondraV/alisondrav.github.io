@@ -28,9 +28,15 @@ export default function NavigationMenu(): ReactElement {
       <motion.div
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
-        className='w-full flex justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24'
+        className='md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row
+         md:justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 shadow-2xl'
       >
-        <img src={MenuClose} className="cursor-pointer" alt="Close" onClick={() => setVisibility('hidden')} />
+        <img
+          src={MenuClose}
+          className="w-5 mb-6 md:mb-0 cursor-pointer"
+          alt="Close"
+          onClick={() => setVisibility('hidden')}
+        />
         <CustomLink action={() => setVisibility('hidden')} label='Main' route='/' />
         <CustomLink action={() => setVisibility('hidden')} label='Who am I?' route='/about-me' />
         <CustomLink action={() => setVisibility('hidden')} label='Projects' route='/projects' />
