@@ -20,12 +20,14 @@ export default function NavigationMenu(): ReactElement {
 
   return (
     <BrowserRouter>
-      <img
-        src={MenuDrD} alt="Close"
+      <motion.img src={MenuDrD} alt="Menu"
+        animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
         className="top-0 fixed pl-8 md:pl-24 pt-7"
         onClick={() => setVisibility('')}
       />
       <motion.div
+        initial={false}
+        transition={{ duration: 0.75 }}
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
         className='md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row
