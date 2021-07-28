@@ -2,8 +2,9 @@ import React, { ReactElement } from 'react'
 
 export default function AboutMe(): ReactElement {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className="h-screen pt-4 flex flex-col items-center bg-background">
+      <h1 className="font-header text-xl md:text-3xl">About Me</h1>
+      <p></p>
     </div>
   )
 }
