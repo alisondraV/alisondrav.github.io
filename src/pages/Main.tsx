@@ -1,7 +1,7 @@
 import { HiddenImage, Surprise } from '@/components'
 import React, { ReactElement } from 'react'
-import Alisa from '@assets/Alisa.svg'
-import Ukraine from '@assets/Ukraine.svg'
+import Alisa from '@images/Alisa.svg'
+import Ukraine from '@images/Ukraine.svg'
 import styled from 'styled-components'
 
 const StyledDiv = styled.div`

@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react'
-import SurpriseImage from '@assets/Surprise.jpeg'
+import SurpriseImage from '@images/Surprise.jpeg'
 import { motion } from 'framer-motion'
 
 export function Surprise(): ReactElement {
