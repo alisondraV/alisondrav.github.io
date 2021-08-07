@@ -14,7 +14,10 @@ module.exports = {
       fontFamily: {
         'header': ['LuthonSouthardSerif', 'sans-serif'],
         'regular': ['KenokyLight', 'sans-serif']
-      }
+      },
+      width: {
+        '34': '8.5rem'
+      },
     },
   },
   variants: {

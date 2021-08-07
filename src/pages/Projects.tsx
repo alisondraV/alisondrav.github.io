@@ -8,8 +8,8 @@ import RapunzelPlay from '@images/Rapunzel.svg'
 
 export default function Projects():ReactElement {
   return (
-    <div className="h-screen min-h-full py-4 bg-background">
-      <h1 className="mt-16 font-header text-center text-xl md:text-3xl mb-6">Projects</h1>
+    <div className='h-screen min-h-full py-4 bg-background'>
+      <h1 className='mt-16 font-header text-center text-xl md:text-3xl mb-12'>Projects</h1>
       <div className='flex justify-evenly mx-4'>
         <ClickableProject header="LogicTasks" image={LogicTasks} />
         <ClickableProject header="Foodizzy" image={Foodizzy} />
