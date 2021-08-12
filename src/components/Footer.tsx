@@ -5,9 +5,9 @@ import Medium from '@images/Medium.png'
 
 export default function Footer(): ReactElement {
   return (
-    <div className="w-full h-12 px-20 flex
+    <div className="w-full min-h-12 md:px-20 px-2 py-4 flex md:flex-row flex-col
         justify-between items-center bg-dark-blue shadow-2xl">
-      <span className='flex'>
+      <span className='flex mb-4 md:mb-auto'>
         <a href='https://github.com/alisondraV'>
           <img className='rounded mr-4' width='40px' src={Github} alt='Github' />
         </a>
