@@ -19,11 +19,25 @@ export default function NavigationMenu(): ReactElement {
 
   return (
     <BrowserRouter>
-      <motion.img src={MenuDrD} alt="Menu"
-        animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
-        className="top-0 fixed pl-8 md:pl-24 pt-7"
-        onClick={() => setVisibility('')}
-      />
+      <div className="top-0 fixed px-8 md:px-24 pt-7 flex justify-between items-center w-full">
+        <motion.img src={MenuDrD} alt="Menu"
+          animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
+          onClick={() => setVisibility('')}
+        />
+        <div className='text-center flex md:flex-row flex-col'>
+          <a
+            href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
+            className='hidden md:block text-xs border-2 px-4 py-1
+             md:mb-auto mb-2 md:mr-2 bg-background shadow-lg'
+          >Resume</a>
+          <a
+            href={'mailto:alice.7414122013@gmail.com'}
+            className='hidden md:block text-xs border-2 px-4 py-1 bg-background shadow-lg'
+          >
+              Contact Me
+          </a>
+        </div>
+      </div>
       <motion.div
         initial={false}
         transition={{ duration: 0.75 }}
