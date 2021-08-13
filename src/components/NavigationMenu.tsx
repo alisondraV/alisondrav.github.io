@@ -2,7 +2,6 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import React, { ReactElement, useState } from 'react'
 import AboutMe from '@/pages/AboutMe'
 import Articles from '@/pages/Articles'
-import ContactMe from '@/pages/ContactMe'
 import { CustomLink } from '@/components'
 import Main from '@/pages/Main'
 import MenuClose from '@images/MenuClose.svg'
@@ -43,14 +42,12 @@ export default function NavigationMenu(): ReactElement {
         <CustomLink action={() => setVisibility('hidden')} label='Who am I?' route='/about-me' />
         <CustomLink action={() => setVisibility('hidden')} label='Projects' route='/projects' />
         <CustomLink action={() => setVisibility('hidden')} label='Articles' route='/articles' />
-        <CustomLink action={() => setVisibility('hidden')} label='Contact Me' route='/contact-me' />
       </motion.div>
 
       <Route exact path="/" component={Main} />
       <Route exact path="/about-me" component={AboutMe} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/articles" component={Articles} />
-      <Route exact path="/contact-me" component={ContactMe} />
     </BrowserRouter>
   )
 }
