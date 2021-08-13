@@ -9,7 +9,7 @@ export function Surprise(): ReactElement {
     <motion.a
       onHoverStart={() => { setSurpriseVisibility('') }}
       onHoverEnd={() => { setSurpriseVisibility('hidden') }}
-      className='absolute bottom-0 text-center md:right-20 mb-4 underline'
+      className='absolute bottom-0 text-center md:right-24 mb-4 underline'
     >
             Hover Me
       <motion.img
