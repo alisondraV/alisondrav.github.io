@@ -19,7 +19,10 @@ export default function NavigationMenu(): ReactElement {
 
   return (
     <BrowserRouter>
-      <div className="top-0 fixed px-8 md:px-24 pt-7 flex justify-between items-center w-full">
+      <div
+        className={`top-0 fixed px-8 md:px-24 py-6 flex justify-between items-center w-full z-30
+            ${location.pathname === '/' ? '' : 'bg-background'}`}
+      >
         <motion.img src={MenuDrD} alt="Menu"
           animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
           onClick={() => setVisibility('')}
@@ -43,7 +46,7 @@ export default function NavigationMenu(): ReactElement {
         transition={{ duration: 0.75 }}
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
-        className='md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row
+        className='md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row z-30
          md:justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 shadow-2xl'
       >
         <img
