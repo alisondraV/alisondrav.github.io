@@ -23,9 +23,12 @@ export default function NavigationMenu(): ReactElement {
         className={`top-0 fixed px-8 md:px-24 py-6 flex justify-between items-center w-full z-30
             ${location.pathname === '/' ? '' : 'bg-background'}`}
       >
-        <motion.img src={MenuDrD} alt="Menu"
+        <motion.img
+          src={MenuDrD}
+          alt="Menu"
           animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
           onClick={() => setVisibility('')}
+          className="cursor-pointer"
         />
         <div className='text-center flex md:flex-row flex-col'>
           <a

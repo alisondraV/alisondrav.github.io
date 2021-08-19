@@ -5,8 +5,8 @@ export default function AboutComponent({ image, text }: AboutComponentProps): Re
 
   return (
     <>
-      <img src={image} alt='Alisa' width='600px' className='flex-1' />
-      <p className='flex-1 ml-10'>{text}</p>
+      <img src={image} alt='Alisa' width='500px' className='flex-1' />
+      <p className='flex-1 ml-10 text-center'>{text}</p>
     </>
   )
 }
