@@ -1,4 +1,4 @@
 export interface ClickableProjectProps {
-    header: string;
+    header: string
     image: string
 }
