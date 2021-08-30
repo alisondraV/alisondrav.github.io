@@ -6,7 +6,7 @@ export default function AboutMe(): ReactElement {
   return (
     <div className='min-h-screen pt-4 flex flex-col items-center bg-background'>
       <h1 className='mt-16 font-header text-xl md:text-3xl'>About Me</h1>
-      <div className='flex flex-col mx-20'>
+      <div className='flex flex-col lg:mx-20 mx-8'>
         <AboutComponent
           image={Alisa}
           leftSided={true}
@@ -19,8 +19,34 @@ export default function AboutMe(): ReactElement {
           image={Alisa}
           leftSided={false}
           text='People are something I love the most in life. So they deserve a special part on my website.
-                My amazing and loving family (parents, grandparents, sisters, aunt, uncle),
-                who I try to call as often as I can, when ocean separates as.'
+            <br/>My amazing and loving family (parents, grandparents, sisters, aunt, uncle),
+            who I try to call as often as I can, when ocean separates as.'
+        />
+        <AboutComponent
+          image={Alisa}
+          leftSided={true}
+          text='My talented and supportive friends here, in Canada, and all the close ones I consider
+            my second family.<br/>Also, all the wonderful friends, who are all over the world, and who
+            I don’t see or even communicate with that much anymore, but who still takes a special place
+            in my heart.<br/>Of course, my amazing colleagues and team at work, who help me grow and
+            learn more every day.'
+        />
+        <AboutComponent
+          image={Alisa}
+          leftSided={false}
+          text='I finished Lyceum of Information Teachnologies in Dnipro, my hometown, with the gold
+            medal as an indication of my hard work and high achievements. That’s where I was first introduced
+             to programming, and understood that it’s my passion.<br/>Then I moved to Kitchener, Canada
+             to study at the Conestoga College for the Computer Programming and Analysis program.'
+        />
+        <AboutComponent
+          image={Alisa}
+          leftSided={true}
+          text='I participated in a Leadership Ambassador program during the first year of studies.
+            For the second year I moved to Waterloo.<br/>After it I started my co-op at the local company
+            called Vehikl, which is a software consultancy, where I’ve learned and still am learning a lot.
+            <br/>Also, during my co-op, when everything was remote, my friends and I launched a
+            Google Developer Student Club at the Conestoga, which was an incredible experience.'
         />
       </div>
     </div>
