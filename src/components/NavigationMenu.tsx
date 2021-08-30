@@ -1,13 +1,14 @@
 import { BrowserRouter, Route } from 'react-router-dom'
 import React, { ReactElement, useState } from 'react'
 import AboutMe from '@/pages/AboutMe'
-import Articles from '@/pages/Articles'
+import Writing from '@/pages/Writing'
 import { CustomLink } from '@/components'
 import Main from '@/pages/Main'
 import MenuClose from '@images/MenuClose.svg'
 import MenuDrD from '@images/MenuDrD.svg'
 import Projects from '@/pages/Projects'
 import { motion } from 'framer-motion'
+import { Paths, routes } from '@/utils/routes'
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -17,11 +18,13 @@ const variants = {
 export default function NavigationMenu(): ReactElement {
   const [visibility, setVisibility] = useState('hidden')
 
+  const isNavBarTransparent = () => location.pathname === Paths.MAIN || location.pathname === Paths.WRITING
+
   return (
     <BrowserRouter>
       <div
         className={`top-0 fixed px-8 md:px-24 py-6 flex justify-between items-center w-full z-30
-            ${location.pathname === '/' ? '' : 'bg-background'}`}
+            ${isNavBarTransparent() ? '' : 'bg-background'}`}
       >
         <motion.img
           src={MenuDrD}
@@ -33,12 +36,12 @@ export default function NavigationMenu(): ReactElement {
         <div className='text-center flex md:flex-row flex-col'>
           <a
             href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
-            className='hidden md:block text-xs border-2 px-4 py-1
+            className='hidden md:block text-xs border-2 px-4 py-1 border-dark-blue
              md:mb-auto mb-2 md:mr-2 bg-background shadow-lg'
           >Resume</a>
           <a
             href={'mailto:alice.7414122013@gmail.com'}
-            className='hidden md:block text-xs border-2 px-4 py-1 bg-background shadow-lg'
+            className='hidden md:block text-xs border-2 px-4 py-1 bg-background shadow-lg border-dark-blue'
           >
               Contact Me
           </a>
@@ -58,16 +61,20 @@ export default function NavigationMenu(): ReactElement {
           alt="Close"
           onClick={() => setVisibility('hidden')}
         />
-        <CustomLink action={() => setVisibility('hidden')} label='Main' route='/' />
-        <CustomLink action={() => setVisibility('hidden')} label='Who am I?' route='/about-me' />
-        <CustomLink action={() => setVisibility('hidden')} label='Projects' route='/projects' />
-        <CustomLink action={() => setVisibility('hidden')} label='Articles' route='/articles' />
+        {routes.map(route =>
+          <CustomLink
+            key={route.name}
+            action={() => setVisibility('hidden')}
+            label={route.name}
+            route={route.route}
+          />
+        )}
       </motion.div>
 
-      <Route exact path="/" component={Main} />
-      <Route exact path="/about-me" component={AboutMe} />
-      <Route exact path="/projects" component={Projects} />
-      <Route exact path="/articles" component={Articles} />
+      <Route exact path={Paths.MAIN} component={Main} />
+      <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
+      <Route exact path={Paths.PROJECTS} component={Projects} />
+      <Route exact path={Paths.WRITING} component={Writing} />
     </BrowserRouter>
   )
 }
