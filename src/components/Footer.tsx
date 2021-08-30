@@ -6,14 +6,15 @@ import { routes } from '@/utils/routes'
 
 export default function Footer(): ReactElement {
   return (
-    <div className='w-full md:h-40 md:px-24 px-2 py-4 flex flex-col bg-dark-blue shadow-2xl justify-between'>
+    <div className='w-full md:h-40 md:px-24 md:px-2 px-8 py-4 flex flex-col
+            bg-dark-blue shadow-2xl justify-between'>
       <div className='flex md:flex-row flex-col justify-between'>
-        <div className='flex flex-col text-background'>
+        <div className='flex flex-col text-background mb-2 md:mb-2'>
           {routes.map(route =>
             <a key={route.name} href={route.route} className='hover:underline text-xs mb-1'>{route.name}</a>
           )}
         </div>
-        <div className='text-background text-center flex flex-col'>
+        <div className='text-background text-center flex flex-col mb-4 md:mb-auto'>
           <a
             href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
             className='text-xs border-2 px-4 py-1 mb-2 border-background'
@@ -28,7 +29,7 @@ export default function Footer(): ReactElement {
           </a>
         </div>
       </div>
-      <hr className='text-background' />
+      <hr className='text-background mb-4 md:mb-auto' />
       <div className='flex flex-col md:flex-row justify-between items-center'>
         <span className='flex mb-4 md:mb-auto'>
           <a href='https://github.com/alisondraV'>
