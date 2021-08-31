@@ -1,4 +1,4 @@
 export * from './CustomLinkProps'
-export * from './HiddenImageProps'
+export * from './SignedImageProps'
 export * from './ClickableProjectProps'
 export * from './AboutComponentProps'

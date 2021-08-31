@@ -1,9 +1,9 @@
 import React, { ReactElement, useState } from 'react'
 import { MotionImage } from '@/components'
 import { motion } from 'framer-motion'
-import { HiddenImageProps } from '@/interfaces'
+import { SignedImageProps } from '@/interfaces'
 
-export function HiddenImage({ image, text }: HiddenImageProps): ReactElement {
+export function HiddenImage({ image, text }: SignedImageProps): ReactElement {
   const [imageVisibility, setImageVisibility] = useState('hidden')
 
   return (

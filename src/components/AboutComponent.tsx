@@ -16,7 +16,7 @@ export default function AboutComponent({ image, leftSided, text }: AboutComponen
             className='flex-1 text-regular text-center lg:mx-10'
             style={{ y: y2 }}
           >
-            {item}{<br/>}{<br/>}
+            {item}{<br/>}
           </motion.p>
         )}
       </div>
