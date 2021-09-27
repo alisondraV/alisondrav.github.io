@@ -13,7 +13,7 @@ export default function AboutComponent({ image, leftSided, text }: AboutComponen
         {text.split('<br/>').map((item, i) =>
           <motion.p
             key={i}
-            className='flex-1 text-regular text-center lg:mx-10'
+            className='flex-1 text-regular text-center'
             style={{ y: y2 }}
           >
             {item}{<br/>}
@@ -28,8 +28,8 @@ export default function AboutComponent({ image, leftSided, text }: AboutComponen
       {!leftSided && formattedText()}
       <motion.img
         src={image}
-        alt='Alisa'
-        width='650px'
+        alt='AboutMe'
+        className={`lg:w-96 w-4/5 mb-4 lg:mb-0 lg:${leftSided ? 'mr-12' : 'ml-12'}`}
         style={{ y: y1 }}
       />
       {leftSided && formattedText()}
