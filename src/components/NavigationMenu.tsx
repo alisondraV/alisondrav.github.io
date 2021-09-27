@@ -6,6 +6,7 @@ import { CustomLink } from '@/components'
 import Main from '@/pages/Main'
 import MenuClose from '@images/MenuClose.svg'
 import MenuDrD from '@images/MenuDrD.svg'
+import MenuDrDBlack from '@images/MenuDrDBlack.svg'
 import Projects from '@/pages/Projects'
 import { motion } from 'framer-motion'
 import { Paths, routes } from '@/utils/routes'
@@ -19,6 +20,7 @@ export default function NavigationMenu(): ReactElement {
   const [visibility, setVisibility] = useState('hidden')
 
   const isNavBarTransparent = () => location.pathname === Paths.MAIN || location.pathname === Paths.WRITING
+  const isNavMenuBlack = () => location.pathname === Paths.WRITING
 
   return (
     <BrowserRouter>
@@ -27,21 +29,22 @@ export default function NavigationMenu(): ReactElement {
             ${isNavBarTransparent() ? '' : 'bg-background'}`}
       >
         <motion.img
-          src={MenuDrD}
-          alt="Menu"
+          src={isNavMenuBlack() ? MenuDrDBlack : MenuDrD}
+          alt='Menu'
           animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
           onClick={() => setVisibility('')}
-          className="cursor-pointer"
+          className='cursor-pointer'
         />
         <div className='text-center flex md:flex-row flex-col'>
           <a
             href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
-            className='hidden md:block text-xs border-2 px-4 py-1 border-dark-blue
-             md:mb-auto mb-2 md:mr-2 bg-background shadow-lg'
+            className={`hidden md:block text-xs border-2 px-4 py-1 md:mb-auto mb-2 md:mr-2 shadow-lg
+                ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
           >Resume</a>
           <a
             href={'mailto:alice.7414122013@gmail.com'}
-            className='hidden md:block text-xs border-2 px-4 py-1 bg-background shadow-lg border-dark-blue'
+            className={`hidden md:block text-xs border-2 px-4 py-1 shadow-lg
+                ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
           >
               Contact Me
           </a>
@@ -52,8 +55,9 @@ export default function NavigationMenu(): ReactElement {
         transition={{ duration: 0.75 }}
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
-        className='md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row z-30
-         md:justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 shadow-2xl'
+        className={`md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row z-30
+            md:justify-between top-0 fixed ${isNavMenuBlack() ? 'bg-black' : 'bg-dark-blue'}
+            py-6 px-5 md:px-24 shadow-2xl`}
       >
         <img
           src={MenuClose}
