@@ -37,11 +37,15 @@ export default function NavigationMenu(): ReactElement {
         />
         <div className='text-center flex md:flex-row flex-col'>
           <a
+            target='_blank'
+            rel='noopener noreferrer'
             href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
             className={`hidden md:block text-xs border-2 px-4 py-1 md:mb-auto mb-2 md:mr-2 shadow-lg
                 ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
           >Resume</a>
           <a
+            target='_blank'
+            rel='noopener noreferrer'
             href={'mailto:alice.7414122013@gmail.com'}
             className={`hidden md:block text-xs border-2 px-4 py-1 shadow-lg
                 ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
