@@ -2,21 +2,26 @@ import React, { ReactElement } from 'react'
 import AboutComponent from '@/components/AboutComponent'
 import { aboutMeInfo } from '@/utils/AboutMeInfo'
 import { SignedImageProps } from '@/interfaces'
+import { Parallax } from '@react-spring/parallax'
 
 export default function AboutMe(): ReactElement {
   return (
-    <div className='min-h-screen pt-4 flex flex-col items-center bg-background'>
-      <h1 className='mt-16 mb-8 lg:mb-auto font-header text-xl md:text-3xl'>About Me</h1>
-      <div className='flex flex-col lg:mx-20 mx-8'>
+    <Parallax
+      className='pt-4 bg-background'
+      pages={aboutMeInfo.length}
+      horizontal
+    >
+      <div className='w-screen h-screen'>
+        <h1 className='lg:mt-16 mt-12 lg:mb-auto font-header text-xl md:text-3xl text-center'>About Me</h1>
         {aboutMeInfo.map(({ image, text }: SignedImageProps, index) =>
           <AboutComponent
+            offset={index}
             key={index}
             image={image}
-            leftSided={index % 2 === 0}
             text={text}
           />
         )}
       </div>
-    </div>
+    </Parallax>
   )
 }
