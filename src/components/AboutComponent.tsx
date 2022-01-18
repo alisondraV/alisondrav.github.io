@@ -21,7 +21,7 @@ export default function AboutComponent({ offset, image, text }: AboutComponentPr
         offset={offset}
         speed={0.3}
         className={`flex items-center justify-center lg:justify-start
-         ${offset === 0 ? 'md:mt-12 ml-8' : 'm-10'}`}>
+         ${offset === 0 ? 'md:mt-12 lg:ml-12' : 'm-10'}`}>
         <img
           src={image}
           alt='AboutMe'
