@@ -1,5 +1,7 @@
 import { SignedImageProps } from '@/interfaces'
 import Main from '@images/Main.png'
+import Family from '@images/Family.png'
+import Friends from '@images/Friends.png'
 import LIT from '@images/LIT.png'
 import Story from '@images/Story.png'
 import Experience from '@images/Experience.jpg'
@@ -11,6 +13,12 @@ export const aboutMeInfo: SignedImageProps[] = [
   {
     image: Main,
     text: 'I love my life. That’s the first thing that comes to my mind when I think about myself. I am a Ukrainian girl, who came to Canada for studying computer programming and developing in this sphere. I am very young, but I love each aspect of my life and my journey so far. And I want to share this love and passion with the world.',
+  },
+  { image: Family,
+    text: 'People are something I love the most in life. So they deserve a special part on my website.<br/><br/>My amazing and loving family (parents, grandparents, sisters, aunt, uncle), who I try to call as often as I can, when ocean separates as.',
+  },
+  { image: Friends,
+    text: 'My talented and supportive friends here, in Canada, and all the close ones I consider my second family.<br/><br/>Also, all the wonderful friends, who are all over the world, and who I don’t see or even communicate with that much anymore, but who still takes a special place in my heart.<br/><br/>Of course, my amazing colleagues and team at work, who help me grow and learn more every day.',
   },
   { image: LIT,
     text: 'I finished Lyceum of Information Technologies in Dnipro, my hometown, with the gold medal as an indication of my hard work and high achievements. That’s where I was first introduced to programming, and understood that it’s my passion.<br/><br/>Then I moved to Kitchener, Canada to study at the Conestoga College for the Computer Programming and Analysis program.',
