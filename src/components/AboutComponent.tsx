@@ -20,7 +20,8 @@ export default function AboutComponent({ offset, image, text }: AboutComponentPr
       <ParallaxLayer
         offset={offset}
         speed={0.3}
-        className='flex items-center justify-center lg:justify-start lg:m-10'>
+        className={`flex items-center justify-center lg:justify-start
+         ${offset === 0 ? 'md:mt-12 ml-8' : 'm-10'}`}>
         <img
           src={image}
           alt='AboutMe'
@@ -29,7 +30,7 @@ export default function AboutComponent({ offset, image, text }: AboutComponentPr
       </ParallaxLayer>
       <ParallaxLayer offset={offset} speed={0.9}>
         <div className='flex justify-end items-center w-full h-full'>
-          <div className={`lg:w-1/2 w-full ${offset === 0 ? 'h-1/2' : 'h-3/4'} bg-opacity-70
+          <div className={`lg:w-1/2 w-full ${offset === 0 ? 'h-1/2' : 'h-3/4'} bg-opacity-80
            lg:bg-opacity-60 lg:bg-light-yellow bg-background`} />
         </div>
       </ParallaxLayer>
