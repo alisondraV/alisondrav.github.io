@@ -6,8 +6,7 @@ import LIT from '@images/LIT.png'
 import Story from '@images/Story.png'
 import Experience from '@images/Experience.jpg'
 import Skills from '@images/Skills.jpg'
-import Hobbies from '@images/Hobbies.png'
-import Interests from '@images/Interests.png'
+import Hobbies_Interests from '@images/Hobbies_Interests.png'
 
 export const aboutMeInfo: SignedImageProps[] = [
   {
@@ -21,26 +20,22 @@ export const aboutMeInfo: SignedImageProps[] = [
     text: 'My talented and supportive friends here, in Canada, and all the close ones I consider my second family.<br/><br/>Also, all the wonderful friends, who are all over the world, and who I don’t see or even communicate with that much anymore, but who still takes a special place in my heart.<br/><br/>Of course, my amazing colleagues and team at work, who help me grow and learn more every day.',
   },
   { image: LIT,
-    text: 'I finished Lyceum of Information Technologies in Dnipro, my hometown, with the gold medal as an indication of my hard work and high achievements. That’s where I was first introduced to programming, and understood that it’s my passion.<br/><br/>Then I moved to Kitchener, Canada to study at the Conestoga College for the Computer Programming and Analysis program.',
+    text: 'I finished Lyceum of Information Technologies in Dnipro; my hometown; with the gold medal as an indication of my hard work and high achievements. That’s where I was first introduced to programming and understood that it’s my passion.<br/><br/>Then I moved to Kitchener; Canada to study at Conestoga College for the Computer Programming and Analysis program.<br/><br/>I participated in a Leadership Ambassador program during the first year of studies; where I got the Leadership Ambassador Award for being proactive and volunteering a lot.',
   },
   {
     image: Story,
-    text: 'I participated in a Leadership Ambassador program during the first year of studies. For the second year I moved to Waterloo.<br/><br/>After it I started my co-op at the local company called Vehikl, which is a software consultancy, where I’ve learned and still am learning a lot. <br/><br/>Also, during my co-op, when everything was remote, my friends and I launched a Google Developer Student Club at the Conestoga, which was an incredible experience.'
+    text: 'After the second year of studies; I started my co-op at the local company called Vehikl. It is an incredible software consultancy; where I met so many wonderful people and learned from them more than I could imagine.<br/><br/>Also; during my co-op; when everything was remote; my friends and I launched a Google Developer Student Club at the Conestoga; which was an incredible experience. We hosted different events and were reaching out to as many students as we could to to build a community of individuals interested in technologies.'
   },
   {
     image: Experience,
-    text: 'The knowledge I gained throughout my friendship with computers  include working with or on these skills or technologies:<br/><br/>• Work with JavaScript and Typescript, C# and PHP<br/>• Microservices architecture<br/>• TDD - this is the technique we try to use for working on the projects in Vehikl, which might be difficult to follow sometimes, but I\'ve definitely learned a lot about testing and this process in general since the beginning of my co-op.<br/>• Mobbing, pairing (working effectively in a group)<br/>• Working with Databases - MongoDB, MySQL, SQLite'
+    text: 'Even though I am a young little programmer; throughout my experience I have worked with multiple different projects. Some of my works are listed on the Projects page, but here is some other experience I gained over the years:<br/><br/>* Working with a big healthcare company with microservices architecture. Building a React management tool for it; creating services in TypeScript and JavaScript; operating with MongoDB NoSQL database as well as with PostgreSQL relational database. It also involved working with Google Cloud Platform.<br/><br/>* Agile Development workflow'
   },
   {
     image: Skills,
-    text: '• Google Console<br/>• Agile Development workflow<br/>• Google Console<br/>• Flexibility to switch between the projects - as a software consultancy, we have a bunch of projects that different teams in company work on. I\'ve switched between a couple of projects, and it\'s been an interesting experience considering that it helps learning to work in different settings<br/>• Explored and worked with various web frameworks such as Laravel, Vue, Tailwind CSS<br/>• DevOps'
+    text: '* Test Driven Development – the technique I worked a lot with on the projects at Vehikl.<br/><br/>* Mob programming (check out my article about it on the Writing page!); pairing (working effectively in a group).<br/><br/>* Exploring and working with Laravel; Java.<br/><br/>* Switching between the projects - efficient context switching: jumping from one project to another in the software consultancy helps learning to work in different settings.'
   },
   {
-    image: Hobbies,
-    text: 'When I have free time I love spending it with my friends and family (as you could guess). But also, I love spending some time with myself, which is extremely important.<br/><br/>I enjoy writing and have a page dedicated to this on my website.<br/><br/>Another hobby of mine is cooking! I love making food or (even more) some unusual drinks and cocktails. And I let my imagination run wild, when I do :)'
-  },
-  {
-    image: Interests,
-    text: 'I have interest in a lot of other things and try to do them as much as possible. Some of my most favourite ones include:<br/>• travelling<br/>• jigsaw puzzles<br/>• meditation & yoga<br/>• rock climbing<br/>• soldering<br/>• attending various art galleries and exhibitions'
+    image: Hobbies_Interests,
+    text: 'When I have free time I love spending it with my friends and family; whom I love with my whole heart and soul.<br/><br/>I enjoy writing and have a page dedicated to this on my website.<br/><br/>Another hobby of mine is cooking! I love making food or (even more) some unusual drinks and cocktails. And I let my imagination run wild; when I do :)<br/><br/>Some other things I am interested in include travelling, jigsaw puzzles, meditation & yoga, rock climbing, soldering, attending various art galleries and exhibitions.'
   }
 ]
