@@ -11,7 +11,7 @@ export const routes = [
     route: Paths.MAIN,
   },
   {
-    name: 'Who am I?',
+    name: 'About Me',
     route: Paths.ABOUT_ME,
   },
   {

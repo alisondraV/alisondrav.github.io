@@ -31,7 +31,7 @@ export default function AboutComponent({ offset, image, text }: AboutComponentPr
       <ParallaxLayer offset={offset} speed={0.75}>
         <div className='flex justify-end items-center w-full h-full'>
           <div className={`lg:w-1/2 w-full ${offset === 0 ? 'h-1/2' : 'h-3/4'} bg-opacity-80
-           lg:bg-opacity-60 lg:bg-light-yellow bg-background`} />
+           lg:bg-opacity-60 lg:bg-light-green bg-background`} />
         </div>
       </ParallaxLayer>
       <ParallaxLayer
