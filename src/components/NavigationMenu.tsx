@@ -6,7 +6,7 @@ import { CustomLink } from '@/components'
 import Main from '@/pages/Main'
 import MenuClose from '@images/MenuClose.svg'
 import MenuDrD from '@images/MenuDrD.svg'
-import MenuDrDBlack from '@images/MenuDrDBlack.svg'
+import MenuDrDBackground from '@images/MenuDrDBackground.svg'
 import Projects from '@/pages/Projects'
 import { motion } from 'framer-motion'
 import { Paths, routes } from '@/utils/routes'
@@ -20,7 +20,7 @@ export default function NavigationMenu(): ReactElement {
   const [visibility, setVisibility] = useState('hidden')
 
   const isNavBarTransparent = () => location.pathname === Paths.MAIN || location.pathname === Paths.WRITING
-  const isNavMenuBlack = () => location.pathname === Paths.WRITING
+  const isOnTheWritingPage = () => location.pathname === Paths.WRITING
 
   return (
     <BrowserRouter>
@@ -29,7 +29,7 @@ export default function NavigationMenu(): ReactElement {
             ${isNavBarTransparent() ? '' : 'bg-background'}`}
       >
         <motion.img
-          src={isNavMenuBlack() ? MenuDrDBlack : MenuDrD}
+          src={isOnTheWritingPage() ? MenuDrDBackground : MenuDrD}
           alt='Menu'
           animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
           onClick={() => setVisibility('')}
@@ -40,15 +40,14 @@ export default function NavigationMenu(): ReactElement {
             target='_blank'
             rel='noopener noreferrer'
             href={'https://drive.google.com/file/d/17hCxlDL-dl-aNSIr_fdxHBkxqCHnQ6jb/view?usp=sharing'}
-            className={`hidden md:block text-xs border-2 px-4 py-1 md:mb-auto mb-2 md:mr-2 shadow-lg
-                ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
+            className={'hidden md:block text-xs border-2 px-4 py-1 md:mb-auto mb-2 md:mr-2' +
+                ' shadow-lg bg-background border-dark-blue'}
           >Resume</a>
           <a
             target='_blank'
             rel='noopener noreferrer'
             href={'mailto:alice.7414122013@gmail.com'}
-            className={`hidden md:block text-xs border-2 px-4 py-1 shadow-lg
-                ${isNavMenuBlack() ? 'text-black border-black' : 'bg-background border-dark-blue'}`}
+            className={'hidden md:block text-xs border-2 px-4 py-1 shadow-lg bg-background border-dark-blue'}
           >
               Contact Me
           </a>
@@ -60,8 +59,7 @@ export default function NavigationMenu(): ReactElement {
         animate={visibility === 'hidden' ? 'closed' : 'open'}
         variants={variants}
         className={`md:w-full w-1/2 h-full md:h-auto flex flex-col md:flex-row z-30
-            md:justify-between top-0 fixed ${isNavMenuBlack() ? 'bg-black' : 'bg-dark-blue'}
-            py-6 px-5 md:px-24 shadow-2xl`}
+            md:justify-between top-0 fixed bg-dark-blue py-6 px-5 md:px-24 shadow-2xl`}
       >
         <img
           src={MenuClose}

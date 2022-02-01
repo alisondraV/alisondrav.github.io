@@ -2,14 +2,12 @@ import React, { ReactElement } from 'react'
 import Github from '@images/Github.png'
 import LinkedIn from '@images/LinkedIn.png'
 import Medium from '@images/Medium.png'
-import { Paths, routes } from '@/utils/routes'
+import { routes } from '@/utils/routes'
 
 export default function Footer(): ReactElement {
-  const isNavMenuBlack = () => location.pathname === Paths.WRITING
-
   return (
-    <div className={`w-full md:h-40 md:px-24 md:px-2 px-8 py-4 flex flex-col
-      shadow-2xl justify-between ${isNavMenuBlack() ? 'bg-black' : 'bg-dark-blue'}`}>
+    <div className={'w-full md:h-40 md:px-24 md:px-2 px-8 py-4 flex flex-col shadow-2xl' +
+        ' justify-between bg-dark-blue'}>
       <div className='flex md:flex-row flex-col justify-between'>
         <div className='flex flex-col text-background mb-2 md:mb-2'>
           {routes.map(route =>
