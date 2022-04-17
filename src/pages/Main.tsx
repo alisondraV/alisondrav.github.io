@@ -1,4 +1,4 @@
-import { HiddenImage, Surprise } from '@/components'
+import { HiddenImage } from '@/components'
 import React, { ReactElement } from 'react'
 import Alisa from '@images/Alisa.svg'
 import Ukraine from '@images/Ukraine.svg'
@@ -17,7 +17,7 @@ export default function Main(): ReactElement {
         I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' /> I
         have a lot of energy and positivity that I am willing to share with people.
       </h2>
-      <Surprise />
+      {/*<Surprise />*/}
     </StyledDiv>
   )
 }
