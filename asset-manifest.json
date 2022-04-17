@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.783bb097.chunk.css",
+    "main.js": "/static/js/main.4711e601.chunk.js",
+    "main.js.map": "/static/js/main.4711e601.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2906c35e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2906c35e.js.map",
+    "static/js/2.13c9d6db.chunk.js": "/static/js/2.13c9d6db.chunk.js",
+    "static/js/2.13c9d6db.chunk.js.map": "/static/js/2.13c9d6db.chunk.js.map",
+    "static/js/3.ab09ccf8.chunk.js": "/static/js/3.ab09ccf8.chunk.js",
+    "static/js/3.ab09ccf8.chunk.js.map": "/static/js/3.ab09ccf8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.783bb097.chunk.css.map": "/static/css/main.783bb097.chunk.css.map",
+    "static/js/2.13c9d6db.chunk.js.LICENSE.txt": "/static/js/2.13c9d6db.chunk.js.LICENSE.txt",
+    "static/media/Alisa.1f32aa9d.svg": "/static/media/Alisa.1f32aa9d.svg",
+    "static/media/Emojillite.31eccbdd.svg": "/static/media/Emojillite.31eccbdd.svg",
+    "static/media/Experience.d765a1d6.jpg": "/static/media/Experience.d765a1d6.jpg",
+    "static/media/Foodizzy.412b82bc.svg": "/static/media/Foodizzy.412b82bc.svg",
+    "static/media/Github.60e9a12d.png": "/static/media/Github.60e9a12d.png",
+    "static/media/Interests_Hobbies.ee6f2438.png": "/static/media/Interests_Hobbies.ee6f2438.png",
+    "static/media/index.css": "/static/media/LuthonSouthardSerif.5cc2ca5e.ttf",
+    "static/media/LIT.b8b739b3.png": "/static/media/LIT.b8b739b3.png",
+    "static/media/LogicTasks.5cdea94e.svg": "/static/media/LogicTasks.5cdea94e.svg",
+    "static/media/Main.169c021b.png": "/static/media/Main.169c021b.png",
+    "static/media/Medium.91aeef37.png": "/static/media/Medium.91aeef37.png",
+    "static/media/MenuClose.b93fb962.svg": "/static/media/MenuClose.b93fb962.svg",
+    "static/media/MenuDrD.e485790d.svg": "/static/media/MenuDrD.e485790d.svg",
+    "static/media/MenuDrDBackground.37878e0f.svg": "/static/media/MenuDrDBackground.37878e0f.svg",
+    "static/media/Rapunzel.d4758f2f.svg": "/static/media/Rapunzel.d4758f2f.svg",
+    "static/media/Skills.7f2e4358.jpg": "/static/media/Skills.7f2e4358.jpg",
+    "static/media/SpookyMaze.f65d00ca.svg": "/static/media/SpookyMaze.f65d00ca.svg",
+    "static/media/Story.ce972951.png": "/static/media/Story.ce972951.png",
+    "static/media/Surprise.83055b08.jpeg": "/static/media/Surprise.83055b08.jpeg",
+    "static/media/Ukraine.df04735f.svg": "/static/media/Ukraine.df04735f.svg",
+    "static/media/WritingBg.d2a2d59d.png": "/static/media/WritingBg.d2a2d59d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2906c35e.js",
+    "static/js/2.13c9d6db.chunk.js",
+    "static/css/main.783bb097.chunk.css",
+    "static/js/main.4711e601.chunk.js"
+  ]
+}
