@@ -1,14 +1,9 @@
-import { BrowserRouter, Route } from 'react-router-dom'
 import React, { ReactElement, useState } from 'react'
-import AboutMe from '@/pages/AboutMe'
-import Writing from '@/pages/Writing'
+import { motion } from 'framer-motion'
 import { CustomLink } from '@/components'
-import Main from '@/pages/Main'
 import MenuClose from '@images/MenuClose.svg'
 import MenuDrD from '@images/MenuDrD.svg'
 import MenuDrDBackground from '@images/MenuDrDBackground.svg'
-import Projects from '@/pages/Projects'
-import { motion } from 'framer-motion'
 import { Paths, routes } from '@/utils/routes'
 
 const variants = {
@@ -19,17 +14,17 @@ const variants = {
 export default function NavigationMenu(): ReactElement {
   const [visibility, setVisibility] = useState('hidden')
 
-  const isNavBarTransparent = () => location.pathname === Paths.MAIN || location.pathname === Paths.WRITING
-  const isOnTheWritingPage = () => location.pathname === Paths.WRITING
+  const isOnTheWritingPage = location.hash === `#${Paths.WRITING}`
+  const isNavBarTransparent = location.hash === `#${Paths.MAIN}` || isOnTheWritingPage
 
   return (
-    <BrowserRouter>
+    <>
       <div
         className={`top-0 fixed px-8 md:px-24 py-6 flex justify-between items-center w-full z-30
-            ${isNavBarTransparent() ? '' : 'bg-background'}`}
+            ${isNavBarTransparent ? '' : 'bg-background'}`}
       >
         <motion.img
-          src={isOnTheWritingPage() ? MenuDrDBackground : MenuDrD}
+          src={isOnTheWritingPage ? MenuDrDBackground : MenuDrD}
           alt='Menu'
           animate={visibility === 'hidden' ? { x: 0 } : { x: -200 }}
           onClick={() => setVisibility('')}
@@ -76,11 +71,6 @@ export default function NavigationMenu(): ReactElement {
           />
         )}
       </motion.div>
-
-      <Route exact path={Paths.MAIN} component={Main} />
-      <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
-      <Route exact path={Paths.PROJECTS} component={Projects} />
-      <Route exact path={Paths.WRITING} component={Writing} />
-    </BrowserRouter>
+    </>
   )
 }

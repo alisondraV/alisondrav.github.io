@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 import Github from '@images/Github.png'
 import LinkedIn from '@images/LinkedIn.png'
 import Medium from '@images/Medium.png'
@@ -11,7 +12,9 @@ export default function Footer(): ReactElement {
       <div className='flex md:flex-row flex-col justify-between'>
         <div className='flex flex-col text-background mb-2 md:mb-2'>
           {routes.map(route =>
-            <a key={route.name} href={route.route} className='hover:underline text-xs mb-1'>{route.name}</a>
+            <Link key={route.name} to={route.route} className='hover:underline text-xs mb-1'>
+              {route.name}
+            </Link>
           )}
         </div>
         <div className='text-background text-center flex flex-col mb-4 md:mb-auto'>
