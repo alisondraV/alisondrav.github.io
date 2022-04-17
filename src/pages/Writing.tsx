@@ -10,7 +10,15 @@ export default function Writing(): ReactElement {
         backgroundPositionY: '-350px',
       }}
     >
-      <h1 className='mt-16 font-header text-background text-xl md:text-3xl'>Writing</h1>
+      <h1 className='mt-16 text-background'>Writing</h1>
+      <a
+        target='_blank'
+        rel='noopener noreferrer'
+        href='https://alisondrav.medium.com/'
+        className='text-background text-2xl py-10 underline'
+      >
+          Medium Articles
+      </a>
     </div>
   )
 }

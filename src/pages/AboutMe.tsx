@@ -14,7 +14,7 @@ export default function AboutMe(): ReactElement {
         horizontal
       >
         <div className='w-screen h-screen'>
-          <h1 className='lg:mt-16 mt-12 lg:mb-auto font-header text-xl md:text-3xl text-center'>About Me</h1>
+          <h1 className='lg:mt-16 mt-12 lg:mb-auto text-center'>About Me</h1>
           {aboutMeInfo.map(({ image, text }: SignedImageProps, index) =>
             <AboutComponent
               offset={index}

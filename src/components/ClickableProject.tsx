@@ -19,9 +19,9 @@ export default function ClickableProject({ header, image, handleClick }: Clickab
       <div
         className={`flex justify-center items-center absolute h-64 w-36 md:h-80 ${textVisibility}`}
       >
-        <h2 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
+        <h3 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
           {header}
-        </h2>
+        </h3>
       </div>
       <img
         src={image}

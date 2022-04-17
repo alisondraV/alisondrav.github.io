@@ -20,3 +20,13 @@
     font-family: 'KenokyLight';
     src: url('assets/fonts/KenokyLight.ttf');
 }
+h1 {
+    @apply text-xl;
+    @apply md:text-3xl;
+    @apply font-header;
+}
+h2 {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply font-header;
+}

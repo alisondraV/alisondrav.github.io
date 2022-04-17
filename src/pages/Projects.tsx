@@ -5,7 +5,7 @@ import { projects } from '@/utils/Projects'
 export default function Projects():ReactElement {
   return (
     <div className='h-screen min-h-full py-4 bg-background'>
-      <h1 className='mt-16 font-header text-center text-xl md:text-3xl mb-12'>Projects</h1>
+      <h1 className='mt-16 text-center mb-12'>Projects</h1>
       <div className='flex justify-evenly mx-4'>
         {projects.map(project =>
           <ClickableProject
