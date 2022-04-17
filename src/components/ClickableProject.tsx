@@ -2,13 +2,14 @@ import React, { ReactElement, useState } from 'react'
 import { ClickableProjectProps } from '@/interfaces'
 import { motion } from 'framer-motion'
 
-export default function ClickableProject({ header, image }: ClickableProjectProps):ReactElement {
+export default function ClickableProject({ header, image, handleClick }: ClickableProjectProps):ReactElement {
   const [textVisibility, setTextVisibility] = useState('')
 
   return (
     <motion.div
-      onHoverStart={() => { setTextVisibility('hidden') }}
-      onHoverEnd={() => { setTextVisibility('') }}
+      onHoverStart={() => setTextVisibility('hidden')}
+      onHoverEnd={() => setTextVisibility('')}
+      onClick={handleClick}
       transition={{ duration: 0.2 }}
       whileHover={{ scale: 1.1 }}
     >
@@ -18,7 +19,7 @@ export default function ClickableProject({ header, image }: ClickableProjectProp
       <div
         className={`flex justify-center items-center absolute h-64 w-36 md:h-80 ${textVisibility}`}
       >
-        <h2 className={`z-20 md:text-xl text-light-yellow ${textVisibility}`}>
+        <h2 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
           {header}
         </h2>
       </div>
