@@ -4,9 +4,9 @@ import { projects } from '@/utils/Projects'
 
 export default function Projects():ReactElement {
   return (
-    <div className='h-screen min-h-full py-4 bg-background'>
+    <div className='min-h-screen py-4 bg-background'>
       <h1 className='mt-16 text-center mb-12'>Projects</h1>
-      <div className='flex justify-evenly mx-4'>
+      <div className='flex justify-evenly flex-wrap mx-4 gap-4'>
         {projects.map(project =>
           <ClickableProject
             key={project.header}

@@ -4,7 +4,7 @@ import WritingBg from '@images/WritingBg.png'
 export default function Writing(): ReactElement {
   return (
     <div
-      className='h-screen pt-4 flex flex-col items-center'
+      className='min-h-screen pt-4 flex flex-col items-center'
       style={{ backgroundImage: `url(${WritingBg})`,
         backgroundPositionX: '-20px',
         backgroundPositionY: '-350px',
