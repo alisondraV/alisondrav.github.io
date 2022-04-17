@@ -11,8 +11,8 @@ const StyledDiv = styled.div`
 
 export default function Main(): ReactElement {
   return (
-    <StyledDiv className="h-screen flex flex-col justify-center items-center bg-gradient-to-br">
-      <h1 className="font-header w-3/4 md:w-1/2 text-center text-xl md:text-2xl leading-normal">
+    <StyledDiv className='h-screen flex flex-col justify-center items-center bg-gradient-to-br'>
+      <h1 className='font-header w-3/4 md:w-1/2 text-center text-xl md:text-2xl leading-normal'>
         Hi there! My name is <HiddenImage image={Alisa} text='Alisa Vynohradova' />,
         I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' /> I
         have a lot of energy and positivity that I am willing to share with people.

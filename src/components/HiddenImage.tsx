@@ -10,7 +10,7 @@ export function HiddenImage({ image, text }: SignedImageProps): ReactElement {
     <motion.span
       onHoverStart={() => { setImageVisibility('') }}
       onHoverEnd={() => { setImageVisibility('hidden') }}
-      className="font-header text-2xl font-semibold underline"
+      className='font-header text-2xl font-semibold underline'
     >
       {text}
       <MotionImage src={image} classes={`absolute right-1/4 bottom-1/3 ${imageVisibility}`} />

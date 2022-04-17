@@ -17,7 +17,7 @@ export function Surprise(): ReactElement {
         transition={{ ease: 'easeOut', duration: 2 }}
         src={SurpriseImage}
         className={surpriseVisibility}
-        alt="Surprise"
+        alt='Surprise'
       />
     </motion.a>
   )

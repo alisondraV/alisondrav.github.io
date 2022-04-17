@@ -58,8 +58,8 @@ export default function NavigationMenu(): ReactElement {
       >
         <img
           src={MenuClose}
-          className="w-5 mb-6 md:mb-0 cursor-pointer"
-          alt="Close"
+          className='w-5 mb-6 md:mb-0 cursor-pointer'
+          alt='Close'
           onClick={() => setVisibility('hidden')}
         />
         {routes.map(route =>

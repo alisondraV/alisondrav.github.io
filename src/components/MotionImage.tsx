@@ -9,7 +9,7 @@ interface MotionImageProps {
 export function MotionImage({ src, classes }: MotionImageProps): ReactElement {
   return (
     <motion.img
-      alt="MotionImage"
+      alt='MotionImage'
       className={classes}
       src={src}
       transition={{ ease: 'easeOut', duration: 0.5 }}
