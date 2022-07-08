@@ -2,7 +2,7 @@ import LogicTasks from '@images/LogicTasks.svg'
 import Foodizzy from '@images/Foodizzy.svg'
 import SpookyMaze from '@images/SpookyMaze.svg'
 import Emojillite from '@images/Emojillite.svg'
-import RapunzelPlay from '@images/Rapunzel.svg'
+import Acacio from '@images/Acacio.svg'
 
 interface ProjectProps {
     header: string
@@ -38,8 +38,8 @@ export const projects: ProjectProps[] = [
     onClick: () => navigateToGHPage('https://github.com/ANDREYDEN/space-apps-2019')
   },
   {
-    header: 'Rapunzel',
-    image: RapunzelPlay,
-    onClick: () => navigateToGHPage('https://github.com/alisondraV/Rapunzel-Monogame')
+    header: 'Acacio',
+    image: Acacio,
+    onClick: () => navigateToGHPage('https://github.com/ANDREYDEN/acacio')
   },
 ]
