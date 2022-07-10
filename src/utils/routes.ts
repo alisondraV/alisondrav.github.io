@@ -3,7 +3,7 @@ export enum Paths {
     ABOUT_ME = '/about-me',
     PROJECTS = '/projects',
     WRITING = '/writing',
-    PROJECT_VIEW = '/project-view',
+    ACACIO_PROJECT = '/acacio',
 }
 
 export const routes = [

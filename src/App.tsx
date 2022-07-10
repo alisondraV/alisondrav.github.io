@@ -8,7 +8,7 @@ import AboutMe from '@/pages/AboutMe'
 import Projects from '@/pages/Projects'
 import Writing from '@/pages/Writing'
 import { AnimatePresence } from 'framer-motion'
-import ProjectView from '@/pages/ProjectView'
+import AcacioProject from '@/pages/projects/AcacioProject'
 
 export default function App(): ReactElement {
   return (
@@ -21,7 +21,7 @@ export default function App(): ReactElement {
               <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
               <Route exact path={Paths.PROJECTS} component={Projects} />
               <Route exact path={Paths.WRITING} component={Writing} />
-              <Route exact path={Paths.PROJECT_VIEW} component={ProjectView} />
+              <Route exact path={Paths.ACACIO_PROJECT} component={AcacioProject} />
             </Switch>
           </AnimatePresence>
         )}

@@ -3,27 +3,9 @@ import React, { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 import { Paths } from '@/utils/routes'
 import Acacio from '@images/Acacio.svg'
+import { backVariants, imageVariants, navigateToGHPage } from '@/utils/projects'
 
-const transition = {
-  duration: 1,
-  ease: [0.43, 0.13, 0.23, 0.96]
-}
-
-const imageVariants = {
-  exit: { y: '50%', opacity: 0, transition },
-  enter: {
-    y: '0%',
-    opacity: 1,
-    transition
-  }
-}
-
-const backVariants = {
-  exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
-}
-
-export default function ProjectView():ReactElement {
+export default function AcacioProject():ReactElement {
   return (
     <motion.div
       className='min-h-screen py-4 bg-background'
@@ -37,6 +19,12 @@ export default function ProjectView():ReactElement {
         src={Acacio}
         alt='Acacio'
       />
+      <p
+        className='underline cursor-pointer'
+        onClick={() => navigateToGHPage('https://github.com/ANDREYDEN/acacio')}
+      >
+        Github
+      </p>
       <motion.div variants={backVariants}>
         <Link to={Paths.PROJECTS}>← Back</Link>
       </motion.div>
