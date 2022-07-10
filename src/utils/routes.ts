@@ -2,7 +2,8 @@ export enum Paths {
     MAIN = '/',
     ABOUT_ME = '/about-me',
     PROJECTS = '/projects',
-    WRITING = '/writing'
+    WRITING = '/writing',
+    PROJECT_VIEW = '/project-view',
 }
 
 export const routes = [

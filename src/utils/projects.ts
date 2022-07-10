@@ -3,12 +3,8 @@ import Foodizzy from '@images/Foodizzy.svg'
 import SpookyMaze from '@images/SpookyMaze.svg'
 import Emojillite from '@images/Emojillite.svg'
 import Acacio from '@images/Acacio.svg'
-
-interface ProjectProps {
-    header: string
-    image: string
-    onClick: () => void
-}
+import { ProjectProps } from '@/interfaces'
+import { Paths } from '@/utils/routes'
 
 const navigateToGHPage = (url: string) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -20,26 +16,26 @@ export const projects: ProjectProps[] = [
   {
     header: 'LogicTasks',
     image: LogicTasks,
-    onClick: () => navigateToGHPage('https://github.com/alisondraV/logic-tasks')
+    linkToPage: Paths.PROJECT_VIEW
   },
   {
     header: 'Foodizzy',
     image: Foodizzy,
-    onClick: () => navigateToGHPage('https://github.com/alisondraV/foodizzy')
+    linkToPage: Paths.PROJECT_VIEW
   },
   {
     header: 'SpookyMaze',
     image: SpookyMaze,
-    onClick: () => navigateToGHPage('https://github.com/MapleMana/SpookyMaze')
+    linkToPage: Paths.PROJECT_VIEW
   },
   {
     header: 'Emojillite',
     image: Emojillite,
-    onClick: () => navigateToGHPage('https://github.com/ANDREYDEN/space-apps-2019')
+    linkToPage: Paths.PROJECT_VIEW
   },
   {
     header: 'Acacio',
     image: Acacio,
-    onClick: () => navigateToGHPage('https://github.com/ANDREYDEN/acacio')
+    linkToPage: Paths.PROJECT_VIEW
   },
 ]
