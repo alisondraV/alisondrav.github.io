@@ -1,29 +1,57 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement, useRef, useState } from 'react'
 import { ClickableProjectProps } from '@/interfaces'
-import { motion } from 'framer-motion'
+import { motion, useCycle } from 'framer-motion'
+
+const project = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height}px)`,
+    transition: {
+      type: 'spring',
+      stiffness: 20,
+      restDelta: 2
+    }
+  }),
+  closed: {
+    clipPath: 'circle(100px)',
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40
+    }
+  }
+}
 
 export default function ClickableProject({ header, image, handleClick }: ClickableProjectProps):ReactElement {
   const [textVisibility, setTextVisibility] = useState('')
+  const [isOpen, toggleOpen] = useCycle(false, true)
+  const containerRef = useRef(null)
 
   return (
     <motion.div
-      onHoverStart={() => setTextVisibility('hidden')}
-      onHoverEnd={() => setTextVisibility('')}
-      onClick={handleClick}
-      transition={{ duration: 0.2 }}
-      whileHover={{ scale: 1.1 }}
+      initial={false}
+      animate={isOpen ? 'open' : 'closed'}
+      ref={containerRef}
     >
-      <div className={`absolute bg-dark-blue h-64 w-36 md:h-80 z-10 opacity-90 ${textVisibility}`} />
-      <div className={`flex justify-center items-center absolute h-64 w-36 md:h-80 ${textVisibility}`}>
-        <h3 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
-          {header}
-        </h3>
-      </div>
-      <img
-        src={image}
-        alt='project'
-        className='h-64 w-36 md:h-80 mb-4 cursor-pointer opacity-90'
-      />
+      <motion.div
+        onHoverStart={() => setTextVisibility('hidden')}
+        onHoverEnd={() => setTextVisibility('')}
+        onClick={() => toggleOpen()}
+        transition={{ duration: 0.2 }}
+        whileHover={{ scale: 1.1 }}
+        variants={project}
+      >
+        <div className={`absolute bg-dark-blue h-64 w-36 md:h-80 z-10 opacity-90 ${textVisibility}`} />
+        <div className={`flex justify-center items-center absolute h-64 w-36 md:h-80 ${textVisibility}`}>
+          <h3 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
+            {header}
+          </h3>
+        </div>
+        <img
+          src={image}
+          alt='project'
+          className='h-64 w-36 md:h-80 mb-4 cursor-pointer opacity-90'
+        />
+      </motion.div>
     </motion.div>
   )
 }
