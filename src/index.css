@@ -5,20 +5,19 @@
 
 * {
     @apply text-dark-blue;
-    font-family: 'KenokyLight', sans-serif;
-    font-size: 24px;
+    @apply font-regular;
+    font-size: 22px;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-
 @font-face {
     font-family: 'LuthonSouthardSerif';
     src: url('assets/fonts/LuthonSouthardSerif.ttf');
 }
 @font-face {
-    font-family: 'KenokyLight';
-    src: url('assets/fonts/KenokyLight.ttf');
+    font-family: 'NanumMyeongjo';
+    src: url('assets/fonts/NanumMyeongjo-Regular.ttf');
 }
 h1 {
     @apply text-xl;
@@ -28,5 +27,10 @@ h1 {
 h2 {
     @apply text-xl;
     @apply md:text-2xl;
+    @apply font-header;
+}
+h3 {
+    @apply text-lg;
+    @apply md:text-xl;
     @apply font-header;
 }

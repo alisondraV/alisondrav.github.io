@@ -13,7 +13,7 @@ module.exports = {
       },
       fontFamily: {
         'header': ['LuthonSouthardSerif', 'sans-serif'],
-        'regular': ['KenokyLight', 'sans-serif']
+        'regular': ['NanumMyeongjo', 'sans-serif']
       },
     },
   },
