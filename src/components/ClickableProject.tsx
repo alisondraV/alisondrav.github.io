@@ -12,7 +12,6 @@ const projectVariants = {
     opacity: 1,
     clipPath: 'circle(100px)',
     transition: {
-      type: 'spring',
       stiffness: 20,
       restDelta: 2,
       ...transition
@@ -23,7 +22,6 @@ const projectVariants = {
     opacity: 0,
     clipPath: 'circle(100px)',
     transition: {
-      type: 'spring',
       stiffness: 100,
       damping: 40,
       ...transition

@@ -54,7 +54,7 @@ export const imageVariants = {
   }
 }
 
-export const backVariants = {
-  exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
+export const textVariants = {
+  exit: { y: 100, opacity: 0, transition },
+  enter: { y: 0, opacity: 1, transition: { delay: 0.5, ...transition } }
 }
