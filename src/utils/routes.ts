@@ -4,6 +4,7 @@ export enum Paths {
     PROJECTS = '/projects',
     WRITING = '/writing',
     FOODIZZY_PROJECT = '/foodizzy',
+    SPOOKY_MAZE_PROJECT = '/spooky-maze',
     EMOJILLITE_PROJECT = '/emojillite',
     ACACIO_PROJECT = '/acacio',
 }

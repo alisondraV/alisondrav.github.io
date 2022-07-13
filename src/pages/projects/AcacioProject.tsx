@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 import Acacio from '@assets/videos/Acacio.gif'
-import { textVariants, imageVariants, navigateToGHPage } from '@/utils/projects'
+import { textVariants, imageVariants, navigateToLink } from '@/utils/projects'
 
 export default function AcacioProject():ReactElement {
   return (
@@ -23,7 +23,7 @@ export default function AcacioProject():ReactElement {
           </ul>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToGHPage('https://github.com/ANDREYDEN/acacio')}
+            onClick={() => navigateToLink('https://github.com/ANDREYDEN/acacio')}
           >
             Github
           </p>

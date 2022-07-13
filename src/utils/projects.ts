@@ -6,7 +6,7 @@ import Acacio from '@images/Acacio.svg'
 import { ProjectProps } from '@/interfaces'
 import { Paths } from '@/utils/routes'
 
-export const navigateToGHPage = (url: string): void => {
+export const navigateToLink = (url: string): void => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   window.open(url, '_blank').focus()
@@ -26,7 +26,7 @@ export const projects: ProjectProps[] = [
   {
     header: 'SpookyMaze',
     image: SpookyMaze,
-    linkToPage: Paths.ACACIO_PROJECT
+    linkToPage: Paths.SPOOKY_MAZE_PROJECT
   },
   {
     header: 'Emojillite',

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 import Emojillite from '@assets/videos/Emojillite.gif'
-import { textVariants, imageVariants, navigateToGHPage } from '@/utils/projects'
+import { textVariants, imageVariants, navigateToLink } from '@/utils/projects'
 
 export default function EmojilliteProject():ReactElement {
   return (
@@ -23,13 +23,13 @@ export default function EmojilliteProject():ReactElement {
           </ul>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToGHPage('https://github.com/ANDREYDEN/space-apps-2019')}
+            onClick={() => navigateToLink('https://github.com/ANDREYDEN/space-apps-2019')}
           >
             Github
           </p>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToGHPage('https://emojillite.herokuapp.com/')}
+            onClick={() => navigateToLink('https://emojillite.herokuapp.com/')}
           >
             Live Website!
           </p>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 import Foodizzy from '@assets/videos/Foodizzy.gif'
-import { textVariants, imageVariants, navigateToGHPage } from '@/utils/projects'
+import { textVariants, imageVariants, navigateToLink } from '@/utils/projects'
 
 export default function FoodizzyProject():ReactElement {
   return (
@@ -15,20 +15,20 @@ export default function FoodizzyProject():ReactElement {
       <div className='mx-20 grid sm:grid-cols-3 grid-cols-1 gap-6 items-center text-center'>
         <motion.div variants={textVariants}>
           <h3 className='mb-2'>Tech Stack</h3>
-          <ul className='text-left list-disc'>
+          <ul className='text-left list-disc pl-20'>
             <li><b>Vue</b></li>
             <li><b>TypeScript</b></li>
             <li>Firebase</li>
           </ul>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToGHPage('https://github.com/alisondraV/foodizzy')}
+            onClick={() => navigateToLink('https://github.com/alisondraV/foodizzy')}
           >
             Github
           </p>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToGHPage('https://foodizzy-app.web.app/')}
+            onClick={() => navigateToLink('https://foodizzy-app.web.app/')}
           >
             Live Website!
           </p>
