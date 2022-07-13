@@ -10,7 +10,7 @@ const projectVariants = {
   enter: {
     scale: 1,
     opacity: 1,
-    clipPath: 'circle(100px)',
+    clipPath: 'circle(99px)',
     transition: {
       stiffness: 20,
       restDelta: 2,
@@ -20,7 +20,7 @@ const projectVariants = {
   exit: {
     scale: 2,
     opacity: 0,
-    clipPath: 'circle(100px)',
+    clipPath: 'circle(99px)',
     transition: {
       stiffness: 100,
       damping: 40,
