@@ -31,7 +31,7 @@ export const projects: ProjectProps[] = [
   {
     header: 'Emojillite',
     image: Emojillite,
-    linkToPage: Paths.ACACIO_PROJECT
+    linkToPage: Paths.EMOJILLITE_PROJECT
   },
   {
     header: 'Acacio',

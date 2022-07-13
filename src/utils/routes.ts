@@ -4,6 +4,7 @@ export enum Paths {
     PROJECTS = '/projects',
     WRITING = '/writing',
     ACACIO_PROJECT = '/acacio',
+    EMOJILLITE_PROJECT = '/emojillite',
 }
 
 export const routes = [
