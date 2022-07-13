@@ -21,7 +21,7 @@ export const projects: ProjectProps[] = [
   {
     header: 'Foodizzy',
     image: Foodizzy,
-    linkToPage: Paths.ACACIO_PROJECT
+    linkToPage: Paths.FOODIZZY_PROJECT
   },
   {
     header: 'SpookyMaze',

@@ -10,6 +10,7 @@ import Writing from '@/pages/Writing'
 import { AnimatePresence } from 'framer-motion'
 import AcacioProject from '@/pages/projects/AcacioProject'
 import EmojilliteProject from '@/pages/projects/EmojilliteProject'
+import FoodizzyProject from '@/pages/projects/FoodizzyProject'
 
 export default function App(): ReactElement {
   return (
@@ -22,8 +23,9 @@ export default function App(): ReactElement {
               <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
               <Route exact path={Paths.PROJECTS} component={Projects} />
               <Route exact path={Paths.WRITING} component={Writing} />
-              <Route exact path={Paths.ACACIO_PROJECT} component={AcacioProject} />
+              <Route exact path={Paths.FOODIZZY_PROJECT} component={FoodizzyProject} />
               <Route exact path={Paths.EMOJILLITE_PROJECT} component={EmojilliteProject} />
+              <Route exact path={Paths.ACACIO_PROJECT} component={AcacioProject} />
             </Switch>
           </AnimatePresence>
         )}
