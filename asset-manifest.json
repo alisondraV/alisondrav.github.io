@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.af76b124.chunk.css",
-    "main.js": "/static/js/main.83ade511.chunk.js",
-    "main.js.map": "/static/js/main.83ade511.chunk.js.map",
+    "main.js": "/static/js/main.a8264347.chunk.js",
+    "main.js.map": "/static/js/main.a8264347.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fcf29349.js",
     "runtime-main.js.map": "/static/js/runtime-main.fcf29349.js.map",
     "static/js/2.5b7507f8.chunk.js": "/static/js/2.5b7507f8.chunk.js",
@@ -13,9 +13,12 @@
     "static/css/main.af76b124.chunk.css.map": "/static/css/main.af76b124.chunk.css.map",
     "static/js/2.5b7507f8.chunk.js.LICENSE.txt": "/static/js/2.5b7507f8.chunk.js.LICENSE.txt",
     "static/media/Acacio.b359c63a.svg": "/static/media/Acacio.b359c63a.svg",
+    "static/media/Acacio.cda7e874.gif": "/static/media/Acacio.cda7e874.gif",
     "static/media/Alisa.1f32aa9d.svg": "/static/media/Alisa.1f32aa9d.svg",
     "static/media/Emojillite.31eccbdd.svg": "/static/media/Emojillite.31eccbdd.svg",
+    "static/media/Emojillite.ecf61618.gif": "/static/media/Emojillite.ecf61618.gif",
     "static/media/Experience.d765a1d6.jpg": "/static/media/Experience.d765a1d6.jpg",
+    "static/media/Foodizzy.0e154660.gif": "/static/media/Foodizzy.0e154660.gif",
     "static/media/Foodizzy.412b82bc.svg": "/static/media/Foodizzy.412b82bc.svg",
     "static/media/Github.60e9a12d.png": "/static/media/Github.60e9a12d.png",
     "static/media/Interests_Hobbies.ee6f2438.png": "/static/media/Interests_Hobbies.ee6f2438.png",
@@ -29,6 +32,7 @@
     "static/media/MenuDrD.e485790d.svg": "/static/media/MenuDrD.e485790d.svg",
     "static/media/MenuDrDBackground.37878e0f.svg": "/static/media/MenuDrDBackground.37878e0f.svg",
     "static/media/Skills.7f2e4358.jpg": "/static/media/Skills.7f2e4358.jpg",
+    "static/media/SpookyMaze.056d8968.gif": "/static/media/SpookyMaze.056d8968.gif",
     "static/media/SpookyMaze.f65d00ca.svg": "/static/media/SpookyMaze.f65d00ca.svg",
     "static/media/Story.ce972951.png": "/static/media/Story.ce972951.png",
     "static/media/Surprise.83055b08.jpeg": "/static/media/Surprise.83055b08.jpeg",
@@ -39,6 +43,6 @@
     "static/js/runtime-main.fcf29349.js",
     "static/js/2.5b7507f8.chunk.js",
     "static/css/main.af76b124.chunk.css",
-    "static/js/main.83ade511.chunk.js"
+    "static/js/main.a8264347.chunk.js"
   ]
 }
