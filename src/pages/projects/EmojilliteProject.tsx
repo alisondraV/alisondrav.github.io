@@ -15,7 +15,7 @@ export default function EmojilliteProject():ReactElement {
       <div className='mx-10 grid sm:grid-cols-4 grid-cols-1 gap-6 items-center text-center'>
         <motion.div variants={textVariants}>
           <h3 className='mb-2'>Tech Stack</h3>
-          <ul className='text-left list-disc'>
+          <ul className='text-left list-disc pl-10'>
             <li><b>Python</b></li>
             <li><b>JavaScript</b></li>
             <li>EarthData (NOAA data)</li>

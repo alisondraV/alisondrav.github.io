@@ -12,6 +12,7 @@ import AcacioProject from '@/pages/projects/AcacioProject'
 import EmojilliteProject from '@/pages/projects/EmojilliteProject'
 import FoodizzyProject from '@/pages/projects/FoodizzyProject'
 import SpookyMazeProject from '@/pages/projects/SpookyMazeProject'
+import LogicTasksProject from '@/pages/projects/LogicTasksProject'
 
 export default function App(): ReactElement {
   return (
@@ -24,6 +25,7 @@ export default function App(): ReactElement {
               <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
               <Route exact path={Paths.PROJECTS} component={Projects} />
               <Route exact path={Paths.WRITING} component={Writing} />
+              <Route exact path={Paths.LOGIC_TASKS_PROJECT} component={LogicTasksProject} />
               <Route exact path={Paths.FOODIZZY_PROJECT} component={FoodizzyProject} />
               <Route exact path={Paths.SPOOKY_MAZE_PROJECT} component={SpookyMazeProject} />
               <Route exact path={Paths.EMOJILLITE_PROJECT} component={EmojilliteProject} />

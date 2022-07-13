@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
-import Acacio from '@assets/videos/Acacio.gif'
+import LogicTasks from '@images/LogicTasks.jpg'
 import { textVariants, imageVariants, navigateToLink } from '@/utils/projects'
 
-export default function AcacioProject():ReactElement {
+export default function LogicTasksProject():ReactElement {
   return (
     <motion.div
       className='min-h-screen py-4 bg-background'
@@ -11,33 +11,29 @@ export default function AcacioProject():ReactElement {
       animate='enter'
       exit='exit'
     >
-      <h1 className='mt-16 text-center mb-12'>Acacio</h1>
+      <h1 className='mt-16 text-center mb-12'>Logic Tasks</h1>
       <div className='mx-10 grid sm:grid-cols-4 grid-cols-1 gap-6 items-center text-center'>
         <motion.div variants={textVariants}>
           <h3 className='mb-2'>Tech Stack</h3>
           <ul className='text-left list-disc pl-10'>
-            <li><b>Next.js</b></li>
-            <li><b>React</b></li>
-            <li><b>Tailwind</b> is used for styling</li>
-            <li><b>Supabase</b> is used for storing data</li>
+            <li><b>C#</b></li>
           </ul>
           <p
             className='underline cursor-pointer'
-            onClick={() => navigateToLink('https://github.com/ANDREYDEN/acacio')}
+            onClick={() => navigateToLink('https://github.com/alisondraV/logic-tasks')}
           >
             Github
           </p>
         </motion.div>
         <motion.img
           variants={imageVariants}
-          src={Acacio}
-          alt='Acacio'
+          src={LogicTasks}
+          alt='LogicTasks'
           className='sm:col-span-2'
         />
         <motion.div variants={textVariants}>
-          This is the graduation project my classmates and I built together for a real client:
-          bar Acacia in Ukraine, Dnipro. It is an extension admin dashboard to the Poster system.
-          It is used these days for the bar management.
+          This project includes a set of various logic tasks a person can go through. It is used as a competition
+          in a school in Dnipro, Ukraine. This is my graduation project, I worked on when I was completing a high school.
         </motion.div>
       </div>
     </motion.div>

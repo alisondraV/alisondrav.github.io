@@ -14,9 +14,9 @@ export const navigateToLink = (url: string): void => {
 
 export const projects: ProjectProps[] = [
   {
-    header: 'LogicTasks',
+    header: 'Logic Tasks',
     image: LogicTasks,
-    linkToPage: Paths.ACACIO_PROJECT
+    linkToPage: Paths.LOGIC_TASKS_PROJECT
   },
   {
     header: 'Foodizzy',

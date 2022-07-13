@@ -3,6 +3,7 @@ export enum Paths {
     ABOUT_ME = '/about-me',
     PROJECTS = '/projects',
     WRITING = '/writing',
+    LOGIC_TASKS_PROJECT = '/logic-tasks',
     FOODIZZY_PROJECT = '/foodizzy',
     SPOOKY_MAZE_PROJECT = '/spooky-maze',
     EMOJILLITE_PROJECT = '/emojillite',
