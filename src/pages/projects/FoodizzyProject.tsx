@@ -15,7 +15,7 @@ export default function FoodizzyProject():ReactElement {
       <div className='mx-20 grid sm:grid-cols-3 grid-cols-1 gap-6 items-center text-center'>
         <motion.div variants={textVariants}>
           <h3 className='mb-2'>Tech Stack</h3>
-          <ul className='text-left list-disc pl-20'>
+          <ul className='text-left list-disc pl-10'>
             <li><b>Vue</b></li>
             <li><b>TypeScript</b></li>
             <li>Firebase</li>
@@ -33,12 +33,11 @@ export default function FoodizzyProject():ReactElement {
             Live Website!
           </p>
         </motion.div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center h-96'>
           <motion.img
             variants={imageVariants}
             src={Foodizzy}
             alt='Foodizzy'
-            className='h-96'
           />
         </div>
         <motion.div variants={textVariants}>

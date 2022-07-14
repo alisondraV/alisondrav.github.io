@@ -12,7 +12,7 @@ export default function EmojilliteProject():ReactElement {
       exit='exit'
     >
       <h1 className='mt-16 text-center mb-12'>Emojillite</h1>
-      <div className='mx-10 grid sm:grid-cols-4 grid-cols-1 gap-6 items-center text-center'>
+      <div className='mx-10 grid sm:grid-cols-3 grid-cols-1 gap-6 items-center text-center'>
         <motion.div variants={textVariants}>
           <h3 className='mb-2'>Tech Stack</h3>
           <ul className='text-left list-disc pl-10'>
@@ -34,12 +34,13 @@ export default function EmojilliteProject():ReactElement {
             Live Website!
           </p>
         </motion.div>
-        <motion.img
-          variants={imageVariants}
-          src={Emojillite}
-          alt='Emojillite'
-          className='sm:col-span-2'
-        />
+        <div className='flex justify-center h-96'>
+          <motion.img
+            variants={imageVariants}
+            src={Emojillite}
+            alt='Emojillite'
+          />
+        </div>
         <motion.div variants={textVariants}>
           Emojillite is a tool for people to explore major satellites that orbit Earth and discover the data
           they are collecting. Emojillite uses emojis to visualize the real-time satellite data

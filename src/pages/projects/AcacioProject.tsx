@@ -36,7 +36,7 @@ export default function AcacioProject():ReactElement {
         />
         <motion.div variants={textVariants}>
           This is the graduation project my classmates and I built together for a real client:
-          bar Acacia in Ukraine, Dnipro. It is an extension admin dashboard to the Poster system.
+          bar Acacia in Dnipro, Ukraine. It is an extension admin dashboard to the Poster system.
           It is used these days for the bar management.
         </motion.div>
       </div>
