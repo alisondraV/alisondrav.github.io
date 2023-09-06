@@ -34,10 +34,12 @@ export default function NavigationMenu(): ReactElement {
           <a
             target='_blank'
             rel='noopener noreferrer'
-            href={'https://drive.google.com/file/d/1Pv0VmdBNN7fKeWLd9ao_0Au43CXVlp0v/view?usp=sharing'}
+            href={'https://drive.google.com/file/d/1PqA2gfxiWepMEnPOJlTikSE_qtLAFRUt/view?usp=drive_link'}
             className={'hidden md:block text-xs border-2 px-4 py-1 md:mb-auto mb-2 md:mr-2' +
                 ' shadow-lg bg-background border-dark-blue'}
-          >Resume</a>
+          >
+              Resume
+          </a>
           <a
             target='_blank'
             rel='noopener noreferrer'
