@@ -23,8 +23,8 @@ export const routes = [
     name: 'Projects',
     route: Paths.PROJECTS,
   },
-  {
-    name: 'Writing',
-    route: Paths.WRITING,
-  },
+  // {
+  //   name: 'Writing',
+  //   route: Paths.WRITING,
+  // },
 ]
