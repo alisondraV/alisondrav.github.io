@@ -28,6 +28,6 @@ export const aboutMeInfo: SignedImageProps[] = [
   },
   {
     image: Interests_Hobbies,
-    text: 'When I have free time I love spending it with my friends and family, whom I love with my whole heart and soul.<br/><br/>I enjoy writing and have a page dedicated to this on my website.<br/><br/>Another hobby of mine is cooking! I love making food or (even more) some unusual drinks and cocktails. And I let my imagination run wild, when I do :)<br/><br/>Also, I looove travelling! Some other things I am interested in include jigsaw puzzles, meditation & yoga, rock climbing, soldering, attending various art galleries and exhibitions.'
+    text: 'When I have free time I love spending it with my friends and family, whom I love with my whole heart and soul.<br/><br/>Another hobby of mine is making drinks! I love preparing some unusual drinks and cocktails. And I let my imagination run wild, when I do :)<br/><br/>Also, I looove travelling! Some other things I am interested in include jigsaw puzzles, meditation & yoga, rock climbing, soldering, attending various art galleries and exhibitions.'
   }
 ]
