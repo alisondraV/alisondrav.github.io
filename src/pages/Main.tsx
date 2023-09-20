@@ -14,8 +14,9 @@ export default function Main(): ReactElement {
     <StyledDiv className='h-screen flex flex-col justify-center items-center bg-gradient-to-br'>
       <h2 className='w-3/4 md:w-1/2 text-center leading-normal'>
         Hi there! My name is <HiddenImage image={Alisa} text='Alisa Vynohradova' />,
-        I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' /> I
-        have a lot of energy and positivity that I am willing to share with people.
+        I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' />. I
+        am a results-driven <span className='font-header text-2xl font-bold'>full-stack developer</span> with
+        excellent collaboration skills. I have a lot of energy and positivity that I am willing to share with people!
       </h2>
       {/*<Surprise />*/}
     </StyledDiv>
