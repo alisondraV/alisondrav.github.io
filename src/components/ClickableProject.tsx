@@ -42,7 +42,7 @@ export default function ClickableProject({ header, image, linkToPage }: ProjectP
       >
         <div className={`absolute bg-dark-blue h-64 w-36 md:h-80 z-10 opacity-90 ${textVisibility}`} />
         <div className={`flex justify-center items-center absolute h-64 w-36 md:h-80 ${textVisibility}`}>
-          <h3 className={`z-20 md:text-xl text-light-yellow underline ${textVisibility}`}>
+          <h3 className={`z-20 md:text-xl text-light-yellow underline mb-4 ${textVisibility}`}>
             {header}
           </h3>
         </div>
@@ -50,7 +50,7 @@ export default function ClickableProject({ header, image, linkToPage }: ProjectP
           <motion.img
             src={image}
             alt='project'
-            className='h-64 w-36 md:h-80 mb-4 cursor-pointer opacity-90'
+            className='h-64 w-36 md:h-80 cursor-pointer opacity-90'
             transition={transition}
           />
         </Link>

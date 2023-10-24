@@ -1,8 +1,8 @@
-import LogicTasks from '@images/LogicTasks.svg'
-import Foodizzy from '@images/Foodizzy.svg'
-import SpookyMaze from '@images/SpookyMaze.svg'
-import Emojillite from '@images/Emojillite.svg'
-import Acacio from '@images/Acacio.svg'
+import LogicTasks from '@images/project-logos/LogicTasks.svg'
+import Foodizzy from '@images/project-logos/Foodizzy.svg'
+import SpookyMaze from '@images/project-logos/SpookyMaze.svg'
+import Emojillite from '@images/project-logos/Emojillite.svg'
+import Acacio from '@images/project-logos/Acacio.svg'
 import { ProjectProps } from '@/interfaces'
 import { Paths } from '@/utils/routes'
 
@@ -24,7 +24,7 @@ export const projects: ProjectProps[] = [
     linkToPage: Paths.FOODIZZY_PROJECT
   },
   {
-    header: 'SpookyMaze',
+    header: 'Spooky Maze',
     image: SpookyMaze,
     linkToPage: Paths.SPOOKY_MAZE_PROJECT
   },
