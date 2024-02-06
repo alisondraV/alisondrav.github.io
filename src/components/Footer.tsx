@@ -21,7 +21,7 @@ export default function Footer(): ReactElement {
           <a
             target='_blank'
             rel='noopener noreferrer'
-            href={'https://drive.google.com/file/d/1PqA2gfxiWepMEnPOJlTikSE_qtLAFRUt/view?usp=drive_link'}
+            href={'https://drive.google.com/file/d/1Pv0VmdBNN7fKeWLd9ao_0Au43CXVlp0v/view'}
             className='text-xs border-2 px-4 py-1 mb-2 border-background'
           >
             Resume
