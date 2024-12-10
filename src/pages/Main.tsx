@@ -12,11 +12,12 @@ const StyledDiv = styled.div`
 export default function Main(): ReactElement {
   return (
     <StyledDiv className='h-screen flex flex-col justify-center items-center bg-gradient-to-br'>
-      <h2 className='w-3/4 md:w-1/2 text-center leading-normal'>
-        Hi there! My name is <HiddenImage image={Alisa} text='Alisa Vynohradova' />,
-        I live and work in Canada, but was born in <HiddenImage image={Ukraine} text='Ukraine' />. I
-        am a results-driven <span className='font-header text-2xl font-bold'>full-stack developer</span> with
-        excellent collaboration skills. I have a lot of energy and positivity that I am willing to share with people!
+      <h2 className='w-3/4 lg:w-1/2 text-center leading-normal'>
+        My name is <HiddenImage image={Alisa} text='Alisa Vynohradova' /> —
+        a <HiddenImage image={Ukraine} text='Ukrainian' /> software developer based in Ontario, Canada —
+        blending technical expertise in <span className='font-header text-2xl font-bold'>full-stack development</span> with
+        a creative flair ✨. I thrive on collaboration, innovation, and attention to detail. Contact me if you want to
+        talk <span className='font-header text-2xl font-bold'>code</span> or <span className='font-header text-2xl font-bold'>mixology</span> :)
       </h2>
       {/*<Surprise />*/}
     </StyledDiv>
