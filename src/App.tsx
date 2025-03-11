@@ -19,7 +19,7 @@ export default function App(): ReactElement {
     <HashRouter>
       <Route
         render={({ location }) => (
-          <AnimatePresence exitBeforeEnter initial={false}>
+          <AnimatePresence initial={false}>
             <Switch location={location} key={location.pathname}>
               <Route exact path={Paths.MAIN} component={Main} />
               <Route exact path={Paths.ABOUT_ME} component={AboutMe} />
