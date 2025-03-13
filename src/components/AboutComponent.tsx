@@ -3,18 +3,6 @@ import { AboutComponentProps } from '@/interfaces'
 import { ParallaxLayer } from '@react-spring/parallax'
 
 export default function AboutComponent({ offset, image, text }: AboutComponentProps): ReactElement {
-  const formattedText = () => {
-    return (
-      <div className='flex flex-col items-end'>
-        {text.split('<br/>').map((item, i) =>
-          <p key={i} className='text-regular text-sm md:text-base text-center md:px-16 px-4 lg:w-1/2 w-full'>
-            {item}{<br/>}
-          </p>
-        )}
-      </div>
-    )
-  }
-
   return (
     <>
       <ParallaxLayer
@@ -37,8 +25,12 @@ export default function AboutComponent({ offset, image, text }: AboutComponentPr
       <ParallaxLayer
         offset={offset}
         speed={0.5}
-        className='flex items-center'>
-        {formattedText()}
+        className='flex items-center justify-end w-full'
+      >
+        <span
+          className='text-regular text-sm md:text-base text-center md:px-16 px-4 lg:w-1/2 w-full'
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
       </ParallaxLayer>
     </>
   )
