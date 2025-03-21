@@ -8,6 +8,13 @@ I am a Ukrainian software developer based in Ontario, Canada, who can blend tech
 https://alisondrav.github.io/
 
 ## How to Run this Project Locally
+
+Before running the project, make sure you have all the dependencies installed:
 ```shell
-npm run start
+npm install
+```
+
+Then, you start the application locally by running the following command:
+```shell
+npm run dev
 ```
